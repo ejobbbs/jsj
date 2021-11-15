@@ -1,7 +1,7 @@
 FROM skillfir/alpine:gcc AS builder01
 # 设置nginx版本变量，注意先查看https://nginx.org获取最新版本  
 ENV NGINX_VERSION 1.21.4
-
+LABEL AUTHOR="WEIPENG"
 # 编译安装nginx
 ARG CONFIG="\
         --prefix=/app/nginx \
